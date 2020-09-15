@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slatko ćoše</title>
+	   <meta http-equiv="Content-Language" content="sr" />
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta  name="keywords" content="kolaci, torte, poslasticara">
+      <meta name="theme-color" content="#3544f6">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="manifest.json">    
+  <link rel="stylesheet" type="text/css" href="stil.css"/>
+
+  <script>
+    function a_plus_b(form) {
+    a=eval(form.a.value)
+    b=eval(form.b.value)
+    c=a+b
+    form.ans.value = c
+    }
+    function a_minus_b(form) {
+      a=eval(form.a.value)
+      b=eval(form.b.value)
+      c=a-b
+      form.ans.value=c
+      }
+    function a_times_b(form) {
+      a=eval(form.a.value)
+      b=eval(form.b.value)
+      c=a*b
+      form.ans.value=c
+      }
+    function a_div_b(form) {
+      a=eval(form.a.value)
+      b=eval(form.b.value)
+      c=a/b
+      form.ans.value = c
+      }
+  </script>
+
+
+</head>
+<body>
+	<div id="wrap">
+
+      <div id="header">
+        <h1><b>SLATKO ĆOŠE</b></h1>
+
+        <div id="meni">
+         <ul>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="ponuda.html">Ponuda</a></li>
+          <li><a href="onama.html">O nama</a></li>
+          <li><a href="cenovnik.html">Cenovnik</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+         </ul>
+         </div>
+      </div>
+
+      <div id="sadrzaj">
+         <h2>CENOVNIK</h2>
+
+        <div id="ceocenovnik">
+          <div id="cenovniklevo">
+            <h3>TORTE</h3><br>
+              <ul>
+                <li>Kilogram: 1200,00 din</li>
+                <li>Kilogram sa fondanom: 1500,00 din</li>
+                <li>Kilogram sa fondanom i figuricom: 1750,00 din</li>
+              </ul> <br><br>
+            <h3>SITNI KOLAČI</h3><br>
+              <ul>
+                <li>Kilogram-posni: 850,00 din</li>
+                <li>Kilogram: 1150,00 din</li>
+              </ul>
+
+          </div>   
+
+
+          <div id="kalkulator">
+
+              <form name="formx">
+                <input type="number" name="a"> <br> <br>
+                <input type="button" value="  +  " onClick="a_plus_b(this.form)">  
+                <input type="button" value="  -  " onClick="a_minus_b(this.form)">  
+                <input type="button" value="  x  " onClick="a_times_b(this.form)">  
+                <input type="button" value="  /  " onClick="a_div_b(this.form)"> <br> <br>
+                <input type="number" name="b"><br><br>
+                Ukupno: <input type "number" value=0 name="ans" size="7">
+              </form>
+          </div>
+        </div>
+
+        <div id="cenovnikdesno">
+          <h3>KOLAČI NA KOMAD</h3><br>
+            <ul>
+              <li>Krempita      100,00 din</li>
+              <li>Šampita       120,00 din</li>
+              <li>Indijaner     130,00 din</li>
+              <li>Baklava       140,00 din</li>
+              <li>Urmašica      140,00 din</li>
+              <li>Cheese cake   150,00 din</li>
+              <li>Muffin        150,00 din</li>
+              <li>Moskva šnit   180,00 din</li>
+              <li>Saher torta   180,00 din</li>
+              <li>Vasa torta    180,00 din</li>
+              <li>Kapri torta   190,00 din</li>
+              <li>Kinder        200,00 din</li>
+              <li>Schwartzvald  220,00 din</li>
+              <li>Jaffa torta   220,00 din</li>
+            </ul>
+        </div>
+      </div>
+
+      <div id="footer">
+        <p>Copyright © 2014-2015 Slatko ćoše. All rights reserved. Designed by M and M team. </p>
+      </div>
+  </div>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

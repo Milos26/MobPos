@@ -1,0 +1,167 @@
+*{
+margin: 0;
+padding: 0;
+}*
+
+#header{
+	text-align: center;
+	color: black;
+	background-image:  ;
+	background-attachment: fixed;
+	border-bottom: thick black double;
+	height: 10em;
+	background-color: #ffc180;
+
+}
+h1{
+	font-size: 36pt;
+	padding-top: 0.7em;
+}
+h2{
+	text-align: center;
+	font-size: 28pt;
+	padding: 1em;
+	color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+}
+h3{
+	font-size: 24pt;
+	color:  #990000;;
+}
+
+#meni { 
+	font-size: 12pt; 
+	text-align: center;
+
+} 
+#meni ul { 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	padding-top: 1em; 
+} 
+#meni li { 
+	display: inline; 
+} 
+#meni a:link, #meni a:visited { 
+	padding: 0.4em 1em 0.4em 1em; 
+	color: #FFFFFF; 
+	background-color: #B51032; 
+	text-decoration: none; 
+	border: 1px solid #711515; 
+} 
+#meni a:hover { 
+	color: #FFFFFF; 
+	background-color: #711515; 
+}
+
+#pozadina {
+	background: url(images/kolaci.jpg) center center no-repeat fixed;
+	background-size: cover;
+	height: 30em;
+	font-weight: 900;
+	color: black;
+	font-style: italic;
+	text-align: center;
+	padding-top: 19em;
+}
+
+#sadrzaj {
+
+	background-size: cover;
+	background-color: #ffdab3;
+	height: 55em;
+}
+#sadrzajPonuda {
+
+	background-size: cover;
+	background-color: #ffdab3;
+}
+
+#slicice{ 
+	width: 800px; 
+	height: 550px; 
+	background: #00000B;
+	margin-left: 14em;
+	margin-right: 9em;
+	margin-top: 3em;
+	margin-bottom: 
+	
+}
+
+.articles{
+	text-align: center;
+	font-size: 16pt;
+
+}
+
+form.kontakt {  
+	padding: 3px 6px 3px 6px; 
+} 
+input.txt { 
+	color: #00008B; 
+	background-color: #ffc180; 
+	border: 1px inset #00008B; 
+	width: 200px; 
+} 
+input.dugme { color: #00008B; 
+	background-color: #ffc180; 
+	border: 1px outset #00008B; 
+	padding: 2px 4px 2px 4px; 
+}
+textarea.com{
+	background-color: #ffc180; 
+}
+#desno{
+	float: right;
+	padding-right: 4em;
+	padding-top: 0.5em;
+	color: black;
+	
+}
+.info{
+	float: left;
+	padding-left: 5em;
+	padding-top: 1.2em;
+	font-size: 15pt;
+	color: black;
+
+}
+#kalkulator {
+
+
+	padding-left: 3.5em;
+	
+	padding-top: 5em;
+	
+}
+
+
+
+#footer{
+	text-align: center;
+	font-size: 15px;
+	border-top: thick black double;
+	height: 3em;
+	padding: 10px 5px;
+	background-color: #ffc180;
+}
+
+#cenovniklevo{
+	padding-left: 3.5em;
+	padding-top: 3.5em;
+	font-size: 16pt;
+	color:  #B51032;
+
+	
+}
+#ceocenovnik {
+	float: left;
+}
+#cenovnikdesno {
+	float: right;
+	padding-right: 7em;
+	padding-top: 3.5em;
+	font-size: 16pt;
+	color:  #B51032;
+}

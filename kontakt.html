@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slatko ćoše</title>
+	<meta http-equiv="Content-Language" content="sr" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta  name="keywords" content="kolaci, torte, poslasticara">
+    <meta name="theme-color" content="#3544f6">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" type="text/css" href="stil.css"/>
+
+<script type="text/javascript">
+  function validateForm(){
+    var x = document.forms["kontakt"]  ["ime"].value;
+      if (x== null || x== "" ) {alert("Ime mora biti upisano");
+          return false;
+        }
+     var y = document.forms["kontakt"]  ["email"].value;
+      if (y== null || y== "" ) {alert("Email adresa nije uneta ili je upisana u pogresnom formatu");
+          return false;
+        }   
+  }
+</script>
+
+<script src="js/jquery-2.1.4.js"></script>
+<script >
+      $(document).ready(function(){
+        // ovde ide kod
+        //ukoliko se klikne na div klase "clickme" izbaci alert
+        $('.dugme').click(function() {
+          alert('Vaš komentar je poslat');
+        });
+      });
+    </script>
+
+
+<style>
+      #map {
+        width: 480px;
+        height: 320px;
+      }
+    </style>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var myLatLng = {lat:44.7983944, lng:20.3744378};
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.7983944,20.3744378),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Slatko ćoše'
+        });
+        
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
+</head>
+<body>
+	<div id="wrap">
+
+      <div id="header">
+        <h1><b>SLATKO ĆOŠE</b></h1>
+
+        <div id="meni">
+         <ul>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="ponuda.html">Ponuda</a></li>
+          <li><a href="onama.html">O nama</a></li>
+          <li><a href="cenovnik.html">Cenovnik</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+
+        
+
+      </div>
+
+        
+      </div>
+
+      
+
+      <div id="sadrzaj">
+
+        <h2>KONTAKT</h2>
+
+        <div class="info">
+          <p>Caffe poslastičarnica <br>
+              SZPUR “Slatko ćoše” <br>
+              Tržno poslovni centar ENJUB<br> 
+              Jurija Gagarina bb,<br>
+              Novi Beograd, Srbija<br> <br>
+              Telefoni:<br>
+              011/123-4567<br>
+              063/123-4567<br><br>
+              E-mail: info@slatkocose.rs
+          </p>
+          <br><br><p><i>Možete nas pronaći i putem mape:</i></p><br>
+
+          <div id="map"></div>
+          
+
+    </script>
+  
+        </div> <br>
+
+       
+
+        <div id="desno"> <i>
+         <form name="kontakt" action="kontakt.html" onsubmit="return validateForm()" method="post">
+          Vaše ime: <br>
+          <input type="text" name="ime" class="txt" size="32"> <br>
+          Vaš email: <br>
+          <input type="text" name="email" class="txt" size="32"><br>
+          Naslov: <br>
+          <input type="text" name="naslov" class="txt" size="32"><br>
+          Poruka: <br>
+          <textarea name="comments" class="com" rows="8" cols="25"></textarea> <br>
+          <input type="submit" class="dugme" value="Pošalji"> </i>
+
+         </form>  
+        </div>
+      </div>
+
+      <div id="footer">
+        <p>Copyright © 2014-2015 Slatko ćoše. All rights reserved. Designed by M and M team. </p>
+      </div>
+
+    </div>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
